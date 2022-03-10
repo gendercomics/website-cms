@@ -1,2 +1,2 @@
-# website-wp
-gendercomics wordpress website
+# website-cms
+gendercomics cms for website
