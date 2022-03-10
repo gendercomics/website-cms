@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  ghost:
+    image: ghost:4
+    container_name: ghost
+    restart: always
+    ports:
+      - 9090:2368
+    environment:
+      database__connection__databasse: ghost
+      url: http://localhost:9090
+      NODE_ENV: development
+    volumes:
+      - /Users/mike/projects/gendercomics/ghost:/var/lib/ghost/content
